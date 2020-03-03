@@ -1,30 +1,48 @@
 <!DOCTYPE html>
 <html>
 
-
     <head>
+        <title>Google</title>
         <script src="index.js"></script>
         <link rel="stylesheet" type="text/css" href="index.css">
     </head>
-    <body>
 
-        <ul>
-            <li><a href="#username">Anthony</a></li>
-            <li><a href="#images">Images</a></li>
-            <li><a href="#gmail">Gmail</a></li>
-            <div class="container" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-        </ul>
+    <!--Creating the dropdown menu-->
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Apps</button>
+        <div id="myDropdown" class="dropdown-content">
+        <a href="https://docs.google.com/document/u/0/">Docs</a>
+        <a href="https://docs.google.com/spreadsheets/u/0/">Slides</a>
+        <a href="https://docs.google.com/presentation/u/0/">Sheets</a>
+        </div>
+    </div>
 
-        <a href="https://www.google.com">
-            <img src="google_logo.png" alt="Google Logo" class="logo">
-            </a>
+    <!--Creating the Gmail and Images buttons in the top navbar-->
+    <input type="button" onclick="window.location.href = 'https://www.google.com/imghp?hl=en&tab=wi&authuser=0&ogbl';" value="Images" class="nav-button">
+    <input type="button" onclick="window.location.href = 'https://mail.google.com/mail/u/0/?tab=wm&ogbl#inbox';" value="Gmail" class="nav-button">
 
-        <input type="text" class="search-bar" placeholder="Search the universe">
+    <!--Creating the Google logo from an online source-->
+    <div class="logo">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+    </div>
 
-    </body>
+    <!--Creating the search bar-->
+    <input type="text" class="search-bar">
 
-</html>
+    <!--Creating the Google Search and I'm Feeling Lucky buttons-->
+    <div class="wrapper">
+        <input type="button" value="Google Search" class="search-lucky-buttons">
+        <input type="button" value="I'm Feeling Lucky" class="search-lucky-buttons">
+    </div>
+
+    <!--Creating the bottom navbar-->
+    <div class="navbar">
+        <a href="https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+        <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+        <a href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a>
+        <a href="https://policies.google.com/privacy?fg=1">Privacy</a>
+        <a href="https://policies.google.com/terms?fg=1">Terms</a>
+        <a href="https://www.google.com/preferences?hl=en">Settings</a>
+    </div>
+
+</html>    
